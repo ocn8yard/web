@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Canciones-Luis Miguel</title>
+  <link rel="stylesheet" href="css/metro-bootstrap.css" />
+  <link rel="stylesheet" href="css/estilos.css" />
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: 'Playfair Display', serif;
+      color: white;
+      background: linear-gradient(135deg, #6f012d, #004488);
+      background-size: 200% 200%;
+    }
+
+    .container {
+      min-height: 100vh;
+      margin-left: 100px;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      position: relative;
+    }
+
+    .brillo-animado {
+      font-size: 4rem;
+      font-weight: bold;
+      background: linear-gradient(45deg, #FFD700, #FFA500, #FFFACD);
+      background-size: 200% 200%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: brillo 2s linear infinite;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    @keyframes brillo {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .icon-bar {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: #a20025;
+      padding: 30px 0;
+      width: 100px;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+    }
+
+    .icon-bar a {
+      color: white;
+      font-size: 48px;
+      margin: 25px 0;
+      text-decoration: none;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    .icon-bar a:hover {
+      color: #FFD700;
+      transform: scale(1.2);
+    }
+
+    .cancion26 {
+      text-align: center;
+      padding: 20px;
+    }
+
+
+    .cancion26 p {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 1.2rem;
+      line-height: 1.8;
+      color: #a20025;
+    }
+
+    /* Menú desplegable */
+    .dropdown {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+    .dropdown button {
+      background-color: #006aff;
+      color: black;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      right: 0;
+      background-color: white;
+      min-width: 180px;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
+      z-index: 1;
+      border-radius: 10px;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      font-weight: bold;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+
+  <div class="icon-bar">
+    <a href="index.html" >🌞</a>
+    <a href="index2.html" >📖</a>
+    <a href="index3.html" >💿</a>
+    <a href="index4.html" >❤️</a>
+    <a href="index5.html" >🎬</a>
+    <a href="index6.html" >📷</a>
+  </div>
+
+  <div class="container">
+    <header>
+      <h1><span class="brillo-animado">Canciones</span> 
+
+    </header>
+
+    <section class="cancion26">
+      
+      <p>
+        <a href="#" onclick="abrirVideo('videos/no.mp4')">No me platiques más</a><br>
+        <a href="https://open.spotify.com/intl-es/track/3mzUPWIxYaJycRUR17reZn?si=237992f1e2994836">La barca</a><br>
+        <a href="https://open.spotify.com/intl-es/track/63PQ70tKtEya0577EL39ew?si=baaa0eea9dc84a64">La gloria eres tú</a><br>
+        <a href="https://open.spotify.com/intl-es/track/4XewBT5MJXyfoHrjsglECn?si=643123d31f124499">No sé tú</a><br>
+        <a href="https://open.spotify.com/intl-es/track/7yGP4SDkslqUb4a00pPhpD?si=a8e6dfd94b0f49f5">Historia de un amor</a><br>
+        <a href="https://open.spotify.com/intl-es/track/1tjTQQERGAwWvCFeJliYmx?si=0c904ea432cc47ba">Somos novios</a><br>
+        <a href="https://open.spotify.com/intl-es/track/3d6wZ5HMr2Vg3hZCWaAiNh?si=e147cc46210644af">Solamente una vez</a><br>
+        <a href="https://open.spotify.com/intl-es/track/0ZdXoQ5Ufq43IFs1bKR1tG?si=653a0f3ae7c7437f">El día que me quieras</a><br>
+        <a href="https://open.spotify.com/intl-es/track/1EZQLWMsFbBBakE3owXj0M?si=bfd00ad9908148e2">El reloj</a><br>
+        <a href="https://open.spotify.com/intl-es/track/7nbBR2SdgNvu5ywLWFrhOI?si=76a88d4dfd134ebc">Por debajo de la mesa</a><br>
+        <a href="https://open.spotify.com/intl-es/track/5SH7aV0VQ8rWjsX73NqSbF?si=c0da929bf99343ed">Encadenados</a><br>
+        <a href="https://open.spotify.com/intl-es/track/6FplxvL2eaAd21QDPSp7M0?si=a55bf3f786814cb9">Sabor a mi</a><br>
+        <a href="https://open.spotify.com/intl-es/track/5Hq7nD5Ro0rsxlVZHGR62H?si=5a0458d7dd00428d">Perfidia</a><br>
+        <a href="https://open.spotify.com/intl-es/track/4mxhziZwkvECLvRoc4T0m6?si=265b79422d00458c">Hasta que vuelva</a><br>
+      </p>
+      <!-- Contenedor del video emergente -->
+<div id="videoPopup" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.9); z-index:9999; justify-content:center; align-items:center;">
+  <div style="position:relative; width:80%; max-width:800px;">
+    <span onclick="cerrarVideo()" style="position:absolute; top:-30px; right:0; font-size:30px; color:white; cursor:pointer;">✖</span>
+    <video id="popupVideo" controls autoplay style="width:100%; border-radius:10px; box-shadow:0 0 20px rgba(255,255,255,0.5);">
+      <source src="" type="video/mp4" />
+      Tu navegador no soporta la reproducción de video.
+    </video>
+  </div>
+</div>
+
+<script>
+  function abrirVideo(ruta) {
+    const video = document.getElementById("popupVideo");
+    video.src = ruta;
+    video.load();
+    video.play();
+    document.getElementById("videoPopup").style.display = "flex";
+  }
+
+  function cerrarVideo() {
+    const video = document.getElementById("popupVideo");
+    video.pause();
+    video.currentTime = 0;
+    video.src = "";
+    document.getElementById("videoPopup").style.display = "none";
+  }
+</script>
+    </section>
+  </div>
+
+</body>
+</html>

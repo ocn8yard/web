@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> ALBUMES-LUIS MIGUEL</title>
+  <link rel="stylesheet" href="css/metro-bootstrap.css" />
+  <link rel="stylesheet" href="css/estilos.css" />
+  <style>
+    html, body {
+      font-family: Forte;
+      background: linear-gradient(135deg, #aa2eac, #dca1d3 );
+      background-size: 200% 200%;
+  background-attachment: fixed;
+    }
+
+    .container {
+      min-height: 100vh;
+      margin-left: 100px;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      position: relative;
+    }
+
+    .brillo-animado {
+      font-size: 4rem;
+      font-weight: bold;
+      background: linear-gradient(45deg, #fc97ff, #410119, #ffffff);
+      background-size: 200% 200%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: brillo 2s linear infinite;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    @keyframes brillo {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .icon-bar {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: #a20025;
+      padding: 30px 0;
+      width: 100px;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+    }
+
+    .icon-bar a {
+      color: white;
+      font-size: 48px;
+      margin: 25px 0;
+      text-decoration: none;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    .icon-bar a:hover {
+      color: #FFD700;
+      transform: scale(1.2);
+    }
+
+    .discografia {
+    padding: 40px 20px;
+}
+
+.album-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.album {
+    text-align: center;
+    background-color: #fdf1f4;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.album:hover {
+    transform: scale(1.05);
+}
+
+.album img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.album h3 {
+    margin: 10px 0 5px;
+    font-family: 'Playfair Display', serif;
+    color: #750026;
+}
+
+.album p {
+    color: #888;
+}
+
+    /* Menú desplegable */
+    .dropdown {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+    .dropdown button {
+      background-color: #006aff;
+      color: black;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      right: 0;
+      background-color: white;
+      min-width: 180px;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
+      z-index: 1;
+      border-radius: 10px;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      font-weight: bold;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="icon-bar">
+    <a href="index.html" >🌞</a>
+    <a href="index2.html" >📖</a>
+    <a href="index3.html" >💿</a>
+    <a href="index4.html" >❤️</a>
+    <a href="index5.html" >🎬</a>
+    <a href="index6.html" >📷</a>
+  </div>
+
+  <div class="container">
+    <header>
+      <h1><span class="brillo-animado">ALBÚMES</span> </h1>
+    </header>
+
+<section class="row bg-white no-margin discografia">
+            <div class="album-grid">
+
+                <div class="album">
+                   <a href="canciones.html">
+                    <img src="img/romances.jpeg" alt="Romances"></a>
+                    <h3>Romances</h3>
+                    <p>1997</p>
+                </div>
+                <div class="album">
+                  <a href="canciones2.html">
+                    <img src="img/romance.jpeg" alt="Romance"></a>
+                    <h3>Romance</h3>
+                    <p>1991</p>
+                </div>
+                <div class="album">
+                  <a href="canciones3.html">
+                    <img src="img/20a.jpg" alt="20 Años"></a>
+                    <h3>20 Años</h3>
+                    <p>1990</p>
+                </div>
+                <div class="album">
+                  <a href="canciones4.html">
+                    <img src="img/vivo.jpg" alt="Vivo"></a>
+                    <h3>Vivo</h3>
+                    <p>2000</p>
+                </div>
+                <div class="album">
+                  <a href="canciones5.html">
+                    <img src="img/aries.jpg" alt="Aries"></a>
+                    <h3>Aries</h3>
+                    <p>1993</p>
+                </div>
+                <div class="album">
+                  <a href="canciones6.html">
+                    <img src="img/lm.jpg" alt="Luis Miguel"></a>
+                    <h3>Luis Miguel</h3>
+                    <p>2010</p>
+                    </div>
+                    <div class="album">
+                      <a href="canciones7.html">
+                        <img src="img/amarte.jpg" alt="Amarte es un placer"></a>
+                        <h3>Amarte es un placer</h3>
+                        <p>1999</p>    
+                </div>
+                <div class="album">
+                  <a href="canciones8.html">
+                    <img src="img/piel.jpg" alt="México en la piel"></a>
+                    <h3>México en la piel</h3>
+                    <p>2004</p>
+                </div>
+                <div class="album">
+                  <a href="canciones9.html">
+                    <img src="img/palabra.jpeg" alt="Palabra de honor"></a>
+                    <h3>Palabra de Honor</h3>
+                    <p>1984</p>
+                </div>
+                <div class="album">
+                  <a href="canciones10.html">
+                    <img src="img/33.jpeg" alt="33r"></a>
+                    <h3>33</h3>
+                    <p>2003</p>
+                </div>
+                <div class="album">
+                  <a href="cancione11.html">
+                    <img src="img/romance2.jpg" alt="Segundo Romance"></a>
+                    <h3>Segundo Romance</h3>
+                    <p>1994</p>
+                </div>
+                <div class="album">
+                  <a href="canciones12.html">
+                    <img src="img/nada.jpg" alt="Nada es igual"></a>
+                    <h3>Nada es igual</h3>
+                    <p>1996</p>
+                </div>
+                <div class="album">
+                  <a href="canciones13.html">
+                    <img src="img/complices.jpg" alt="Cómplices"></a>
+                    <h3>Cómplices</h3>
+                    <p>2008</p>
+                </div>
+                <div class="album">
+                  <a href="canciones14.html">
+                    <img src="img/soy.jpg" alt="Soy como quiero ser"></a>
+                    <h3>Soy como quiero ser</h3>
+                    <p>1987</p>
+                </div>
+                <div class="album">
+                  <a href="canciones15.html">
+                    <img src="img/ms.jpg" alt="Mis Romances"></a>
+                    <h3>Mis Romances</h3>
+                    <p>2001</p>
+                </div>
+                <div class="album">
+                  <a href="canciones16.html">
+                    <img src="img/el.jpeg" alt="El concierto"></a>
+                    <h3>El concierto</h3>
+                    <p>1995</p>
+                </div>
+                <div class="album">
+                  <a href="canciones17.html">
+                    <img src="img/nv.jpg" alt="Navidades"></a>
+                    <h3>Navidades</h3>
+                    <p>2006</p>
+                </div>
+                <div class="album">
+                  <a href="canciones18.html">
+                    <img src="img/sl.jpg" alt="Un sol"></a>
+                    <h3>Un sol</h3>
+                    <p>1982</p>
+                </div>
+                <div class="album">
+                  <a href="canciones19.html">
+                    <img src="img/smp.jpeg" alt="¡México por siempre!"></a>
+                    <h3>¡México por siempre!</h3>
+                    <p>2017</p>
+                </div>
+                <div class="album">
+                  <a href="canciones20.html">
+                    <img src="img/dcd.jpg" alt="Decídete"></a>
+                    <h3>Decídete</h3>
+                    <p>1983</p>
+                </div>
+                <div class="album">
+                  <a href="canciones21.html">
+                    <img src="img/fbr.jpg" alt="Fiebre de amor"></a>
+                    <h3>Fiebre de amor</h3>
+                    <p>2010</p>
+                </div>
+                <div class="album">
+                  <a href="canciones22.html">
+                    <img src="img/meu.jpg" alt="Meu Sonho Perdido"></a>
+                    <h3>Meu Sonho Perdidor</h3>
+                    <p>1985</p>
+                </div>
+                <div class="album">
+                  <a href="canciones23.html">
+                    <img src="img/directo.jpg" alt="Directo al corazón"></a>
+                    <h3>Directo al corazónr</h3>
+                    <p>1982</p>
+                </div>
+                <div class="album">
+                  <a href="canciones24.html">
+                    <img src="img/idol.jpg" alt="El ídolo de México"></a>
+                    <h3>El ídolo de México</h3>
+                    <p>1992</p>
+                </div>
+                <div class="album">
+                  <a href="canciones25.html">
+                    <img src="img/rom.jpg" alt="Romántico desde siempre"></a>
+                    <h3>Romántico desde siempre</h3>
+                    <p>1994</p>
+                </div>
+                <div class="album">
+                  <a href="canciones26.html">
+                    <img src="img/bol.jpg" alt="Mis boleros favoritos"></a>
+                    <h3>Mis boleros favoritos</h3>
+                    <p>2002</p>
+                </div>
+                <div class="album">
+                  <a href="canciones27.html">
+                    <img src="img/exi.jpg" alt="Grandes éxitos"></a>
+                    <h3>Grandes éxitos</h3>
+                    <p>2005</p>
+                </div>
+                <div class="album">
+                  <a href="canciones28.html">
+                    <img src="img/todo.jpg" alt="Todos los romances"></a>
+                    <h3>Todos los romances</h3>
+                    <p>1998</p>
+                </div>
+                
+
+
+            </div>
+
+        </section>
+</body>
+</html>

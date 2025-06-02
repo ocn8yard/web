@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Algunos Amores - El Sol de México</title>
+  <link rel="stylesheet" href="css/metro-bootstrap.css" />
+  <link rel="stylesheet" href="css/estilos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+  <style>
+    html, body {
+      
+      background: linear-gradient(135deg, #e9c8c8, #000000);
+      background-size: 200% 200%;
+  background-attachment: fixed;
+}
+
+
+    .container {
+      min-height: 100vh;
+      margin-left: 100px;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      position: relative;
+    }
+
+    .brillo-animado {
+      font-size: 4rem;
+      font-weight: bold;
+      background: linear-gradient(45deg, #1d0d37, #2262ab, #FFFACD);
+      background-size: 200% 200%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: brillo 2s linear infinite;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    @keyframes brillo {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .icon-bar {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: #a20025;
+      padding: 30px 0;
+      width: 100px;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+    }
+
+    .icon-bar a {
+      color: white;
+      font-size: 48px;
+      margin: 25px 0;
+      text-decoration: none;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    .icon-bar a:hover {
+      color: #FFD700;
+      transform: scale(1.2);
+    }
+
+    .amor {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .amor img {
+      max-width: 300px;
+      border-radius: 20px;
+      margin-bottom: 20px;
+      border: 6px solid #5e043c80;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    }
+
+    .amor p {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 1.2rem;
+      line-height: 1.8;
+    }
+
+    .amor-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    
+    .foto {
+  text-align: center; 
+  background-color: #fdf1f4;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra verticalmente los hijos */
+}
+
+.foto img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+    .foto h3 {
+      margin: 10px 0 5px;
+      font-family: 'Playfair Display', serif;
+      color: #750026;
+    }
+
+    .foto p {
+      color: #888;
+    }
+
+    .dropdown {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+    .dropdown button {
+      background-color: #FFD700;
+      color: #750026;
+      padding: 10px 20px;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-family: 'Playfair Display', serif;
+      font-weight: bold;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      right: 0;
+      background-color: white;
+      min-width: 180px;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
+      z-index: 1;
+      border-radius: 10px;
+    }
+
+    .dropdown-content a {
+      color: #750026;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      font-family: 'Playfair Display', serif;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #000000;
+      color: white;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    
+    section.row.no-margin.amor {
+      background: transparent !important;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="icon-bar">
+    <a href="index.html">🌞</a>
+    <a href="index2.html">📖</a>
+    <a href="index3.html">💿</a>
+    <a href="index4.html">❤️</a>
+    <a href="index5.html">🎬</a>
+    <a href="index6.html">📷</a>
+  </div>
+
+  <div class="container">
+    <header>
+      <h1><span class="brillo-animado">Algunos Amoríos</span></h1>
+
+
+      <div class="dropdown">
+        <button>Opciones</button>
+        <div class="dropdown-content">
+          <a href="amor.html">Algunos Amoríos</a>
+          <a href="relacion.html">Relación más larga</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="amor">
+      <img src="img/amorio.jpg" alt="Luis Miguel joven">
+      <p>
+        Luis Miguel, conocido como "El Sol de México", ha tenido una vida amorosa muy mediática y comentada a lo largo de su carrera. Aquí tienes un resumen de algunos de sus romances más conocidos:
+      </p>
+    </section>
+
+    <section class="row no-margin amor">
+      <div class="amor-grid">
+
+        <div class="amor">
+          <img src="img/Mari.jpeg" alt="Mariana Yazbek">
+          <h3>Mariana Yazbek</h3>
+          <p>Fue una de sus primeras relaciones conocidas, en los años 80. Ella era fotógrafa y aparece en el video de la canción "Cuando calienta el sol".</p>
+        </div>
+
+        <div class="amor">
+          <img src="img/sala.jpg" alt="Stephanie Salas">
+          <h3>Stephanie Salas</h3>
+          <p>Actriz y cantante mexicana. Tuvieron una relación breve, pero significativa: es madre de Michelle Salas, hija de Luis Miguel.</p>
+        </div>
+
+        <div class="amor">
+          <img src="img/luci.jpg" alt="Lucía Méndez">
+          <h3>Lucía Méndez</h3>
+          <p>Actriz y cantante mexicana. Se ha dicho que tuvo un romance con Luis Miguel cuando él era muy joven, algo polémico por la diferencia de edad.</p>
+        </div>
+           
+        <div class="amor">
+          <img src="img/day.jpg" alt="Daisy Fuentes">
+          <h3>Daisy Fuentes</h3>
+          <p>Modelo y presentadora cubano-estadounidense. Tuvieron una relación en los años 90, que terminó pero años después volvieron brevemente.</p>
+        </div>
+
+        <div class="amor">
+          <img src="img/mari.jpg" alt="Mariah Carey">
+          <h3>Mariah Carey</h3>
+          <p>Uno de sus romances más famosos internacionalmente. Estuvieron juntos entre 1998 y 2001. Carey incluso habla de él en su autobiografía como una relación intensa.</p>
+        </div>
+
+        <div class="amor">
+          <img src="img/ara.jpg" alt="Aracely Arámbula">
+          <h3>Aracely Arámbula</h3>
+          <p>Actriz y cantante mexicana. Fue una de las relaciones más estables de Luis Miguel. Tuvieron dos hijos juntos: Miguel y Daniel. Se separaron alrededor de 2009.</p>
+        </div>
+        <div class="amor">
+          <img src="img/sofi.jpg" alt="Sofía Vergara">
+          <h3>Sofía Vergara</h3>
+          <p>Quién es: Actriz y modelo colombiana.
+    
+        Aunque no fue confirmada oficialmente, se rumorea que tuvieron un breve romance a principios de los años 2000. 
+         Fueron vistos juntos en algunos eventos sociales.
+
+</p>
+        </div>
+        <div class="amor">
+          <img src="img/geno.jpg" alt="Genoveva Casanova">
+          <h3>Genoveva Casanova</h3>
+         <p> En 2023, surgieron fotos y rumores de que tuvo una cita con Luis Miguel en Madrid. Aunque ambos lo negaron, 
+         la prensa del corazón lo cubrió ampliamente.
+        </p>
+        </div>
+
+      </div>
+    </section>
+  </div>
+
+</body>
+</html>

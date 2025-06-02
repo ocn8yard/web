@@ -1,0 +1,194 @@
+
+html, body {
+  background: linear-gradient(135deg, #003366, #004488);
+  background-size: 200% 200%;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  position: relative;
+  min-height: 100vh;
+}
+
+.container {
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  margin-left: 100px;
+}
+
+header {
+  padding: 20px 20px 40px;
+  margin-bottom: 40px;
+}
+
+header img {
+  max-width: 100%;
+  height: auto;
+  max-height: 600px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px gold;
+  margin: 0 auto;
+}
+
+.title-section {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.brillo-animado {
+  font-size: 4rem;
+  font-weight: bold;
+  background: linear-gradient(45deg, #ffd700, #ffa500, #fffacd);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: brillo 2s linear infinite;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes brillo {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.icon-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #a20025;
+  padding: 30px 0;
+  width: 80px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.icon-bar a {
+  color: white;
+  font-size:60px;
+  margin: 20px 0;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.icon-bar a:hover {
+  color: #ffd700;
+  transform: scale(1.2);
+}
+
+.links {
+  margin: 30px 0;
+}
+
+.links a {
+  display: inline-block;
+  margin: 10px 15px;
+  font-weight: bold;
+  color: #ffd700;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.links a:hover {
+  color: #ffa500;
+  transform: scale(1.1);
+}
+
+footer {
+  background-color: black;
+  padding: 20px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+footer a {
+  color: gold;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.live-clock-widget {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  background: black;
+  border-radius: 15px;
+  padding: 15px 25px;
+  color: white;
+  box-shadow: 0 0 12px rgba(255, 215, 0, 0.8);
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  z-index: 1100;
+  user-select: none;
+  cursor: default;
+}
+
+@media (max-width: 991px) {
+  .container {
+    margin-left: 80px;
+  }
+
+  .icon-bar {
+    width: 60px;
+  }
+
+  .icon-bar a {
+    font-size: 28px;
+  }
+
+  .brillo-animado {
+    font-size: 3rem;
+  }
+
+  .live-clock-widget {
+    font-size: 1.5rem;
+    padding: 10px 15px;
+  }
+}
+
+/* 📱 Dispositivos pequeños como celulares */
+@media (max-width: 600px) {
+  .container {
+    margin-left: 0;
+  }
+
+  .icon-bar {
+    position: relative;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .icon-bar a {
+    margin: 0 10px;
+    font-size: 24px;
+  }
+
+  header img {
+    max-height: 220px;
+  }
+
+  .brillo-animado {
+    font-size: 2.2rem;
+  }
+
+  .live-clock-widget {
+    top: auto;
+    bottom: 15px;
+    right: 15px;
+    font-size: 1.3rem;
+  }
+
+  .links a {
+    display: block;
+    margin: 10px auto;
+  }
+}

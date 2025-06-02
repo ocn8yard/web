@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amor- El Sol de México</title>
+  <link rel="stylesheet" href="css/metro-bootstrap.css" />
+  <link rel="stylesheet" href="css/estilos.css" />
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: 'Playfair Display', serif;
+      color: white;
+      background: linear-gradient(135deg, #890606, #004488);
+      background-size: 200% 200%;
+    }
+
+    .container {
+      min-height: 100vh;
+      margin-left: 100px;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      position: relative;
+    }
+
+    .brillo-animado {
+      font-size: 4rem;
+      font-weight: bold;
+      background: linear-gradient(45deg, #1d0d37, #2262ab, #FFFACD);
+      background-size: 200% 200%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: brillo 2s linear infinite;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    @keyframes brillo {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .icon-bar {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: #a20025;
+      padding: 30px 0;
+      width: 100px;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+    }
+
+    .icon-bar a {
+      color: white;
+      font-size: 48px;
+      margin: 25px 0;
+      text-decoration: none;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    .icon-bar a:hover {
+      color: #FFD700;
+      transform: scale(1.2);
+    }
+
+    .romance {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .romance img {
+      max-width: 300px;
+      border-radius: 20px;
+      margin-bottom: 20px;
+      border: 4px solid #5e043c80;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+      
+    }
+
+    .romance p {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 1.2rem;
+      line-height: 1.8;
+    }
+    .imagenes-lado-a-lado {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* espacio entre las imágenes */
+  flex-wrap: wrap; /* opcional, para que se acomoden en pantallas pequeñas */
+}
+
+
+    /* Menú desplegable */
+    .dropdown {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+    .dropdown button {
+      background-color: #FFD700;
+      color: black;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      right: 0;
+      background-color: white;
+      min-width: 180px;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
+      z-index: 1;
+      border-radius: 10px;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      font-weight: bold;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Barra de íconos -->
+  <div class="icon-bar">
+    <a href="index.html" >🌞</a>
+    <a href="index2.html" >📖</a>
+    <a href="index3.html" >💿</a>
+    <a href="index4.html" >❤️</a>
+    <a href="index5.html" >🎬</a>
+    <a href="index6.html" >📷</a>
+  </div>
+
+  <div class="container">
+    <header>
+      <h1><span class="brillo-animado">Amorío actual</span> </h1>
+
+      <!-- Menú desplegable -->
+      <div class="dropdown">
+        <button>Opciones</button>
+        <div class="dropdown-content">
+          <a href="amor.html">Algunos amoríos</a>
+          <a href="relacion.html">Relación más larga</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="romance">
+      <img src="img/amor.jpg" alt="Luis Miguel relación">
+      <p>
+         Si bien, Luis Miguel también es muy conocido por estar involucrado en varios amoríos con varias famosas, entre ellas actricez, cantantes y modelos;
+         sin embargo ultimamente se ha visto involucrado con Paloma Cuevas quien es una diseñadora de modas de 52 años de edad y nació en Córdoba España.
+      </p>
+    </section>
+    <section class="romance">
+  <div class="imagenes-lado-a-lado">
+    <img src="img/palo.jpg" alt="Luis Miguel relación">
+    <img src="img/palo2.jpg" alt="Luis Miguel relación">
+     </div>
+   </section>
+
+  </div>
+
+</body>
+</html>
+
+
+

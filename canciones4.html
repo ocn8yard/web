@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Canciones-Luis Miguel</title>
+  <link rel="stylesheet" href="css/metro-bootstrap.css" />
+  <link rel="stylesheet" href="css/estilos.css" />
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: 'Playfair Display', serif;
+      color: white;
+      background: linear-gradient(135deg, #6f012d, #004488);
+      background-size: 200% 200%;
+    }
+
+    .container {
+      min-height: 100vh;
+      margin-left: 100px;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      position: relative;
+    }
+
+    .brillo-animado {
+      font-size: 4rem;
+      font-weight: bold;
+      background: linear-gradient(45deg, #FFD700, #FFA500, #FFFACD);
+      background-size: 200% 200%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: brillo 2s linear infinite;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    @keyframes brillo {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .icon-bar {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: #a20025;
+      padding: 30px 0;
+      width: 100px;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+    }
+
+    .icon-bar a {
+      color: white;
+      font-size: 48px;
+      margin: 25px 0;
+      text-decoration: none;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    .icon-bar a:hover {
+      color: #FFD700;
+      transform: scale(1.2);
+    }
+
+    .cancion4 {
+      text-align: center;
+      padding: 20px;
+    }
+
+
+    .cancion4 p {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 1.2rem;
+      line-height: 1.8;
+      color: #a20025;
+    }
+
+    /* Menú desplegable */
+    .dropdown {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+    .dropdown button {
+      background-color: #006aff;
+      color: black;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      right: 0;
+      background-color: white;
+      min-width: 180px;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
+      z-index: 1;
+      border-radius: 10px;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      font-weight: bold;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+
+  <div class="icon-bar">
+    <a href="index.html">🌞</a>
+    <a href="index2.html">📖</a>
+    <a href="index3.html">💿</a>
+    <a href="index4.html" >❤️</a>
+    <a href="index5.html">🎬</a>
+    <a href="index6.html">📷</a>
+  </div>
+
+  <div class="container">
+    <header>
+      <h1><span class="brillo-animado">Canciones</span> 
+
+    </header>
+
+    <section class="cancion4">
+      
+      <p>
+        <a href="#" onclick="abrirVideo('videos/intro.mp4')">Intro(en vivo)</a><br>
+        <a href="https://open.spotify.com/intl-es/track/2W6vF3llKtqoI1iZybxcIS?si=f5422d83489040e5 ">Quiero(en vivo)</a><br>
+         <a href="https://open.spotify.com/intl-es/track/0OcPSZlWFl78HvTOh3aKDj?si=0fc6646765ee45e8">Tu solo tú(en vivo)</a><br>
+          <a href="https://open.spotify.com/intl-es/track/4RDhCX2agyMpLcIeMhZhUu?si=bc6715573250497b">Romance Medley No me platiques más,No se tú, La puerta, La barca, Inolvidable (en vivo)</a><br>
+          <a href="https://open.spotify.com/intl-es/track/0OcPSZlWFl78HvTOh3aKDj?si=ba7915cd63684bd7">Tu solo tú(en vivo)</a><br>
+          <a href="https://open.spotify.com/intl-es/track/3wEzk1HBTwaDsV6GU0trKN?si=549c5d8050b94450">Suave(en vivo)</a><br>
+          <a href="https://open.spotify.com/intl-es/track/1vx0yzcHzr7kB3MPB5J2y2?si=40ef485fde464f09">Segundo romace(El día que me quieras/ solamente una vez/somos novios/ todo y  nada/ nosotros)(en vivo)</a><br>
+          <a href="https://open.spotify.com/intl-es/track/7gLH63Zp0CZyjPG3QiCBzZ?si=f6c9cfc1706d48cf">O tú o ninguna(en vivo)</a><br>
+          <a href="https://open.spotify.com/intl-es/track/2M3N4KGdpqhOTH6Wk9ifJH?si=19b936b38cfe4c67">Sol, arena y mar(en vivo)</a><br>
+          <a href="https://open.spotify.com/intl-es/track/7exfNBa2ZlzKKDikpyGyKu?si=34c76a184edf49d0">Romances Medley Voy a apagar la luz/Contigo aprendí, por debajo de la mesa, el reloj, Sabor a mi, La gloria eres 
+            tú, Bésame mucho(en vivo)</a><br>
+          <a href="https://open.spotify.com/intl-es/track/1jxO9AwMqYynDsuMWKrPvi?si=5da55425fe234b1a">La bikina(en vivo)</a><br>
+          <a href="https://open.spotify.com/intl-es/track/6H5p5mRhaEvn03Jv71bj0O?si=f7aea9f2fc96418c">Cómo es posible que a mi lado(en vivo)</a><br>
+          <a href="https://open.spotify.com/intl-es/track/2bJo0T1SSiZkTqUOkKkA5Z?si=3e10a462b7c04d35">Te propongo esta noche(en vivo)</a><br>
+      
+      </p>
+<div id="videoPopup" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.9); z-index:9999; justify-content:center; align-items:center;">
+  <div style="position:relative; width:70%; max-width:700px;">
+    <span onclick="cerrarVideo()" style="position:absolute; top:-30px; right:0; font-size:30px; color:white; cursor:pointer;">✖</span>
+    <video id="popupVideo" controls autoplay style="width:100%; border-radius:10px; box-shadow:0 0 20px rgba(255,255,255,0.5);">
+      <source src="" type="video/mp4" />
+      Tu navegador no soporta la reproducción de video.
+    </video>
+  </div>
+</div>
+
+<script>
+  function abrirVideo(ruta) {
+    const video = document.getElementById("popupVideo");
+    video.src = ruta;
+    video.load();
+    video.play();
+    document.getElementById("videoPopup").style.display = "flex";
+  }
+
+  function cerrarVideo() {
+    const video = document.getElementById("popupVideo");
+    video.pause();
+    video.currentTime = 0;
+    video.src = "";
+    document.getElementById("videoPopup").style.display = "none";
+  }
+</script>
+    </section>
+  </div>
+
+</body>
+</html>

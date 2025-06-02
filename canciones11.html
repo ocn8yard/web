@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Canciones-Luis Miguel</title>
+  <link rel="stylesheet" href="css/metro-bootstrap.css" />
+  <link rel="stylesheet" href="css/estilos.css" />
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: 'Playfair Display', serif;
+      color: white;
+      background: linear-gradient(135deg, #6f012d, #004488);
+      background-size: 200% 200%;
+    }
+
+    .container {
+      min-height: 100vh;
+      margin-left: 100px;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      position: relative;
+    }
+
+    .brillo-animado {
+      font-size: 4rem;
+      font-weight: bold;
+      background: linear-gradient(45deg, #FFD700, #FFA500, #FFFACD);
+      background-size: 200% 200%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: brillo 2s linear infinite;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    @keyframes brillo {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .icon-bar {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: #a20025;
+      padding: 30px 0;
+      width: 100px;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+    }
+
+    .icon-bar a {
+      color: white;
+      font-size: 48px;
+      margin: 25px 0;
+      text-decoration: none;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    .icon-bar a:hover {
+      color: #FFD700;
+      transform: scale(1.2);
+    }
+
+    .cancion11 {
+      text-align: center;
+      padding: 20px;
+    }
+
+
+    .cancion11 p {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 1.2rem;
+      line-height: 1.8;
+      color: #a20025;
+    }
+
+    /* Menú desplegable */
+    .dropdown {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+    .dropdown button {
+      background-color: #006aff;
+      color: black;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      right: 0;
+      background-color: white;
+      min-width: 180px;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
+      z-index: 1;
+      border-radius: 10px;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      font-weight: bold;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+
+  <div class="icon-bar">
+    <a href="index.html" >🌞</a>
+    <a href="index2.html" >📖</a>
+    <a href="index3.html" >💿</a>
+    <a href="index4.html" >❤️</a>
+    <a href="index5.html" >🎬</a>
+    <a href="index6.html" >📷</a>
+  </div>
+
+  <div class="container">
+    <header>
+      <h1><span class="brillo-animado">Canciones</span> 
+
+    </header>
+
+    <section class="cancion11">
+      
+      <p>
+        <a href="#" onclick="abrirVideo('videos/eldia.mp4')">El día que me quieras</a><br>
+        <a href="https://open.spotify.com/intl-es/track/0G8iM0Y7xbireCKILhmXAZ?si=8d712101472a43c6">Sin ti</a><br>
+         <a href="https://open.spotify.com/intl-es/track/4dr2h9rnEW6OBxm8LvRBW2?si=b95ded4746444e79">Somos novios</a><br>
+          <a href="https://open.spotify.com/intl-es/track/1lKI9y1DL6QnYTZguVmACX?si=eeaa6f4a1c2246d8">La media vuelta</a><br>
+          <a href="https://open.spotify.com/intl-es/track/70BcjMGYixgH1GKkLS40Jr?si=6c1bef75b3404108">Solamente una vez</a><br>
+          <a href="https://open.spotify.com/intl-es/track/1FJSXlDrgr9AS37w67CPHP?si=8214cbecebbe4306">Todo y nada</a><br>
+          <a href="https://open.spotify.com/intl-es/track/6av3uLAacGG7c9fjshWmuH?si=019eb160c6b741f3">Historia de un amor</a><br>
+          <a href="https://open.spotify.com/intl-es/track/4uP2EipoPEAq3InMMCQMG9?si=f169c79fb1d14e17">Cómo yo te amé</a><br>
+          <a href="https://open.spotify.com/intl-es/track/6xNBJuhCUv24pLdO28AdGc?si=d4279d0a014842a0">Nosotros</a><br>
+          <a href="https://open.spotify.com/intl-es/track/4wwmsWGi6mMEqWx8leGFsO?si=d754154522664b76">Yo sé que volverás</a><br>
+          <a href="https://open.spotify.com/intl-es/track/0JsCnQ0xGg6zE7WZkBD9hA?si=457359a313704511">Delirio</a><br>
+      </p>
+      <!-- Contenedor del video emergente -->
+<div id="videoPopup" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.9); z-index:9999; justify-content:center; align-items:center;">
+  <div style="position:relative; width:80%; max-width:800px;">
+    <span onclick="cerrarVideo()" style="position:absolute; top:-30px; right:0; font-size:30px; color:white; cursor:pointer;">✖</span>
+    <video id="popupVideo" controls autoplay style="width:100%; border-radius:10px; box-shadow:0 0 20px rgba(255,255,255,0.5);">
+      <source src="" type="video/mp4" />
+      Tu navegador no soporta la reproducción de video.
+    </video>
+  </div>
+</div>
+
+<script>
+  function abrirVideo(ruta) {
+    const video = document.getElementById("popupVideo");
+    video.src = ruta;
+    video.load();
+    video.play();
+    document.getElementById("videoPopup").style.display = "flex";
+  }
+
+  function cerrarVideo() {
+    const video = document.getElementById("popupVideo");
+    video.pause();
+    video.currentTime = 0;
+    video.src = "";
+    document.getElementById("videoPopup").style.display = "none";
+  }
+</script>
+    </section>
+  </div>
+
+</body>
+</html>

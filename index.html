@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>El sol de México</title>
+
+  <link rel="stylesheet" href="css/metro-bootstrap.css" />
+  <link rel="stylesheet" href="css/estilos.css" />
+  <script src="jquery/jquery.min.js"></script>
+  <script src="jquery/jquery.widget.min.js"></script>
+  <script src="metro/metro-dropdown.js"></script>
+</head>
+<body class="metro">
+  <div class="container bg-grayLighter">
+    <header>
+      <h1>
+        <span class="brillo-animado">EL SOL</span>
+        <span class="brillo-animado">DE MÉXICO</span>
+      </h1>
+      <img src="img/luismiguel.jpg" alt="Luis Miguel" />
+      <div class="title-section">
+        <div class="stars" style="font-size: 30px; color: gold;"></div>
+      </div>
+    </header>
+
+    <div class="icon-bar">
+      <a href="index.html" >🌞</a>
+      <a href="index2.html" >📖</a>
+      <a href="index3.html" >💿</a>
+      <a href="index4.html" >❤️</a>
+      <a href="index5.html" >🎬</a>
+      <a href="index6.html" >📷</a>
+    </div>
+
+   
+    <div class="links">
+      <a href="https://www.instagram.com/luismiguel/?igsh=M3ZuZGlo4HJ6bHo" target="_blank">Instagram de Luis Miguel</a>
+      <br />
+      <a href="https://open.spotify.com/artist/2ue6nzmsSgqreT6dA3zUP?si=qkKFaDgyQri1Avk6r22" target="_blank">Escúchalo en Spotify</a>
+    </div>
+  </div>
+
+  
+  <div class="live-clock-widget" aria-label="Hora actual">
+    <div id="live-clock">00:00:00</div>
+  </div>
+
+  <footer>
+    <p>
+      <a href="https://www.instagram.com/d_xnix/profilecard/?igsh=MWFuYnp0bHF1dXUxYw%3D%3D" target="_blank">d_xnix</a>
+    </p>
+  </footer>
+
+  <script>
+    function updateClock() {
+      const now = new Date();
+      const hours = now.getHours().toString().padStart(2, "0");
+      const mins = now.getMinutes().toString().padStart(2, "0");
+      const secs = now.getSeconds().toString().padStart(2, "0");
+      document.getElementById("live-clock").textContent = `${hours}:${mins}:${secs}`;
+    }
+
+    setInterval(updateClock, 1000);
+    updateClock();
+  </script>
+</body>
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Biografía - El Sol de México</title>
+  <link rel="stylesheet" href="css/metro-bootstrap.css" />
+  <link rel="stylesheet" href="css/estilos.css" />
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: 'Ambient', serif;
+      color: white;
+      background: linear-gradient(135deg, #000000, #000000);
+      background-size: 200% 200%;
+    }
+
+    .container {
+      min-height: 100vh;
+      margin-left: 100px;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      position: relative;
+    }
+
+    .brillo-animado {
+      font-size: 4rem;
+      font-weight: bold;
+      background: linear-gradient(45deg, #FFD700, #FFA500, #FFFACD);
+      background-size: 200% 200%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: brillo 2s linear infinite;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    @keyframes brillo {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .icon-bar {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: #a20025;
+      padding: 30px 0;
+      width: 100px;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+    }
+
+    .icon-bar a {
+      color: white;
+      font-size: 48px;
+      margin: 25px 0;
+      text-decoration: none;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    .icon-bar a:hover {
+      color: #FFD700;
+      transform: scale(1.2);
+    }
+
+    .links {
+      margin: 30px 0;
+      text-align: center;
+    }
+
+    .links a {
+      display: inline-block;
+      margin: 10px 0;
+      font-weight: bold;
+      color: #FFD700;
+      text-align: center;
+      text-decoration: none;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    .links a:hover {
+      color: #FFA500;
+      transform: scale(1.1);
+    }
+
+    .giras {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .giras img {
+      max-width: 300px;
+      border-radius: 20px;
+      margin-bottom: 20px;
+      border: 4px solid #000000;
+      box-shadow: 0 4px 8px rgb(121, 2, 2);
+    }
+
+    .giras p {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 1.2rem;
+      line-height: 1.8;
+    }
+
+    .dropdown {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+    .dropdown button {
+      background-color: #000000;
+      color: rgb(255, 209, 26);
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      right: 0;
+      background-color: white;
+      min-width: 180px;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
+      z-index: 1;
+      border-radius: 10px;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      font-weight: bold;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="icon-bar">
+    <a href="index.html" >🌞</a>
+    <a href="index2.html" >📖</a>
+    <a href="index3.html" >💿</a>
+    <a href="index4.html" >❤️</a>
+    <a href="index5.html" >🎬</a>
+    <a href="index6.html" >📷</a>
+  </div>
+
+  <div class="container">
+    <header>
+      <h1><span class="brillo-animado">GIRAS</span> <span class="brillo-animado">MUSICALES</span></h1>
+
+      <div class="dropdown">
+        <button>Opciones</button>
+        <div class="dropdown-content">
+          <a href="premios.html">Premios Musicales</a>
+          <a href="giras.html">Giras Musicales</a>
+          <a href="actor.html">Actor</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="row bg-white no-margin" style="margin-bottom: 30px;"> 
+      <div class="span12">
+        <img src="img/girass.jpg" alt="Silueta Luis Miguel"
+             style="display: block; margin: 20px auto; width: 80%; max-width: 800px; border: 5px solid #252cff; border-radius: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+      </div>
+    </section>
+
+  
+    <div class="links">
+  <a href="#" onclick="abrirVideo('videos/1.mp4')">1982: UN SOL</a><br>
+  <a href="#" onclick="abrirVideo('videos/2.mp4')">1983: DIRECTO AL CORAZÓN</a><br>
+  <a href="#" onclick="abrirVideo('videos/3.mp4')">1983: DECÍDETE</a><br>
+  <a href="#" onclick="abrirVideo('videos/4.mp4')">1984-1985: GIRA PALABRA DE HONOR</a><br>
+  <a href="#" onclick="abrirVideo('videos/5.mp4')">1985-1986: FIEBRE DE AMOR</a><br>
+  <a href="#" onclick="abrirVideo('videos/6.mp4')">1987-1988: SOY COMO QUIERO SER</a><br>
+  <a href="#" onclick="abrirVideo('videos/7.mp4')">1989-1990: BUSCA UNA MUJER</a><br>
+  <a href="#" onclick="abrirVideo('videos/8.mp4')">1991: 20 AÑOS</a><br>
+  <a href="#" onclick="abrirVideo('videos/9.mp4')">1992-1993: ROMANCE TOUR</a><br>
+  <a href="#" onclick="abrirVideo('videos/10.mp4')">1994: ARIES TOUR</a><br>
+  <a href="#" onclick="abrirVideo('videos/11.mp4')">1994-1995: SEGUNDO ROMANCE (El concierto)</a><br>
+  <a href="#" onclick="abrirVideo('videos/12.mp4')">1997-1998: ROMANCES TOUR/GIRA AMÉRICA</a><br>
+  <a href="#" onclick="abrirVideo('videos/13.mp4')">1999-2000:AMARTE ES UN PLACER</a><br>
+  <a href="#" onclick="abrirVideo('videos/14.mp4')">2002:MIS ROMANCES (Mis boleros favoritos)</a><br>
+  <a href="#" onclick="abrirVideo('videos/15.mp4')">2003-2004: 33 TOUR</a><br>
+  <a href="#" onclick="abrirVideo('videos/16.mp4')">2005-2007: MÉXICO EN LA PIEL</a><br>
+  <a href="#" onclick="abrirVideo('videos/17.mp4')">2008-2009: CÓMPLICES TOUR</a><br>
+  <a href="#" onclick="abrirVideo('videos/18.mp4')">2010-2013: LUIS MIGUEL TOUR</a><br>
+  <a href="#" onclick="abrirVideo('videos/19.mp4')">2014-2015: THE DEJA VU TOUR</a><br>
+  <a href="#" onclick="abrirVideo('videos/20.mp4')">2018-2019: MÉXICO POR SIEMPRE</a><br>
+  <a href="#" onclick="abrirVideo('videos/21.mp4')">2023-2024: GIRA MUNDIAL</a><br>
+</div>
+
+
+  
+<div id="videoPopup" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.9); z-index:9999; justify-content:center; align-items:center;">
+  <div style="position:relative; width:80%; max-width:800px;">
+    <span onclick="cerrarVideo()" style="position:absolute; top:-30px; right:0; font-size:30px; color:white; cursor:pointer;">✖</span>
+    <video id="popupVideo" controls autoplay style="width:100%; border-radius:10px; box-shadow:0 0 20px rgba(255,255,255,0.5);">
+      <source src="" type="video/mp4" />
+      Tu navegador no soporta la reproducción de video.
+    </video>
+  </div>
+</div>
+
+<script>
+  function abrirVideo(ruta) {
+    const video = document.getElementById("popupVideo");
+    video.src = ruta;
+    video.load();
+    video.play();
+    document.getElementById("videoPopup").style.display = "flex";
+  }
+
+  function cerrarVideo() {
+    const video = document.getElementById("popupVideo");
+    video.pause();
+    video.currentTime = 0;
+    video.src = "";
+    document.getElementById("videoPopup").style.display = "none";
+  }
+</script>
+
+
+</body>
+</html>
